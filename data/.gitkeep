@@ -1,0 +1,2 @@
+Drop the Kaggle "Resume Dataset" file here as UpdatedResumeDataSet.csv
+(columns: Category, Resume). The training script reads it from this folder.

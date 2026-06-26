@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
+# Secrets / config
+.env
+
+# Data & model artifacts (regenerated locally)
+data/*.csv
+models/*.joblib
+
+# OS
+.DS_Store
+
+# Note: reports/ (classification_report.txt + confusion_matrix.png) are kept
+# in the repo on purpose as showcase results.
