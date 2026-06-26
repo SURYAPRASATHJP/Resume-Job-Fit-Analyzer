@@ -106,36 +106,9 @@ Resume + Job description
 
 ---
 
-## 🚀 Run it locally
+The dataset and the trained model are intentionally not committed (they're large / licensed /
+regenerable) 
 
-Requires Python 3.10+ (developed and tested on 3.14, Apple Silicon).
-
-```bash
-# 1. Environment
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-cp .env.example .env                 # adjust if needed
-
-# 2. Get the dataset
-#    Download the Kaggle "Resume Dataset" (~960 resumes, ~25 categories)
-#    and save it as data/UpdatedResumeDataSet.csv (columns: Category, Resume).
-
-# 3. Train the classifier  → writes models/pipeline.joblib + the reports/
-python src/train.py
-
-# 4. (Optional) Set up the local LLM for the critique
-#    Install Ollama from https://ollama.com, then:
-ollama pull llama3.1:8b              # matches OLLAMA_MODEL in .env
-
-# 5. Launch the app
-streamlit run app.py
-```
-
-The dataset and the trained model are intentionally **not** committed (they're large / licensed /
-regenerable) — the steps above reproduce them in a couple of minutes.
-
----
 
 ## 🔭 Possible extensions
 
